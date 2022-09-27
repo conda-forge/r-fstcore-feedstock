@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,10 +36,12 @@ requirements:
     - r-rcpp
     - _openmp_mutex  # [linux]
     - llvm-openmp  # [osx]
+    - lz4-c
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp
+    - lz4-c
 
 test:
   commands:

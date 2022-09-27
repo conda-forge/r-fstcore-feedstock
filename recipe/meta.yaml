@@ -37,11 +37,13 @@ requirements:
     - _openmp_mutex  # [linux]
     - llvm-openmp  # [osx]
     - lz4-c
+    - zstd
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp
     - lz4-c
+    - zstd
 
 test:
   commands:

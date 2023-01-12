@@ -1,4 +1,4 @@
-{% set version = "0.9.12" %}
+{% set version = "0.9.14" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fstcore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fstcore/fstcore_{{ version }}.tar.gz
-  sha256: 8f86e7cd4074cfda812c8e5dcf0f03a5d02d37795c16c7511e11e2262c32b5a8
+  sha256: d08efa06003bd65bf5131e17980904c1334afbd7474b09a841effa6810251356
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/

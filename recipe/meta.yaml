@@ -1,4 +1,4 @@
-{% set version = "0.9.18" %}
+{% set version = "0.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fstcore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fstcore/fstcore_{{ version }}.tar.gz
-  sha256: 18c71e17f51663d413ccc9c5c62fbdd8d5c783438bd84dd56037e91345be9f03
+  sha256: 1e9e976d295dccda563a7d100665cb9d36d1403d3c37ce835f681b81f7a8d9cc
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
